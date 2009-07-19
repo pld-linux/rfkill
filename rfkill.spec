@@ -21,6 +21,7 @@ Simple /dev/rfkill userspace tool.
 
 %build
 %{__make} \
+	V=1 \
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcppflags} %{rpmcflags}" \
 	LDFLAGS="%{rpmldflags}"
