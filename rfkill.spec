@@ -8,6 +8,7 @@ Group:		Networking/Admin
 # git clone http://git.sipsolutions.net/rfkill.git
 Source0:	%{name}-%{snap}.tar.bz2
 # Source0-md5:	3edde5a4e66ad8848036805d8adeb1c4
+URL:		http://wireless.kernel.org/en/users/Documentation/rfkill
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_bindir	/bin
