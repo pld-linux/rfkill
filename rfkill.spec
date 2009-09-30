@@ -1,13 +1,11 @@
-%define	snap	20090719
 Summary:	Simple /dev/rfkill userspace tool
 Name:		rfkill
-Version:	0.1
-Release:	0.%{snap}.1
+Version:	0.3
+Release:	1
 License:	GPL
 Group:		Networking/Admin
-# git clone http://git.sipsolutions.net/rfkill.git
-Source0:	%{name}-%{snap}.tar.bz2
-# Source0-md5:	3edde5a4e66ad8848036805d8adeb1c4
+Source0:	http://wireless.kernel.org/download/rfkill/%{name}-%{version}.tar.bz2
+# Source0-md5:	f4d693c2a3e5f0503a3cde3d84be8919
 URL:		http://wireless.kernel.org/en/users/Documentation/rfkill
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -17,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Simple /dev/rfkill userspace tool.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 %{__make} \
