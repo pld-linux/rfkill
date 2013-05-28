@@ -1,13 +1,15 @@
 Summary:	Simple /dev/rfkill userspace tool
 Summary(pl.UTF-8):	Proste narzędzie przestrzeni użytkownika do urządzenia /dev/rfkill
 Name:		rfkill
-Version:	0.4
+Version:	0.5
 Release:	1
 License:	MIT-like
 Group:		Networking/Admin
-Source0:	http://wireless.kernel.org/download/rfkill/%{name}-%{version}.tar.bz2
-# Source0-md5:	727892c0fb35c80ee3849fbe89b45350
+Source0:	https://www.kernel.org/pub/software/network/rfkill/%{name}-%{version}.tar.xz
+# Source0-md5:	ce834c00c049cd86a04ab115c92ef548
 URL:		http://wireless.kernel.org/en/users/Documentation/rfkill
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_bindir	/bin
