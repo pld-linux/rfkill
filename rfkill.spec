@@ -2,7 +2,7 @@ Summary:	Simple /dev/rfkill userspace tool
 Summary(pl.UTF-8):	Proste narzędzie przestrzeni użytkownika do urządzenia /dev/rfkill
 Name:		rfkill
 Version:	1.0
-Release:	1
+Release:	2
 License:	MIT-like
 Group:		Networking/Admin
 Source0:	https://www.kernel.org/pub/software/network/rfkill/%{name}-%{version}.tar.xz
